@@ -3,7 +3,7 @@ import React from 'react'
 function Description() {
   return (
     <div>
-        <div className="container productDescription w-75">
+        <div className="container productDescription">
             <p className='paragraph-spacing mt-5'>
             Elevate your living space with the timeless elegance and unmatched comfort of the Fossil Corner Couch. Crafted with the utmost attention to detail, this stunning piece of furniture seamlessly blends form and function, making it the perfect addition to any modern home.
             </p>

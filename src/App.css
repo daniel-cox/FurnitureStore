@@ -1,0 +1,33 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  text-align: center;
+}
+html{
+  background-color: #F8F9FA;
+  height: 800px;
+  max-width: auto;
+}
+
+.rightSidebar {
+  max-width: 650px;
+  float: right;
+}
+
+.productDescription{
+  display: inline-table;
+}
+
+img{
+  float: left;
+  background-size:cover
+  background-position: center;
+}
+
+.paragraph-spacing {
+  margin-bottom: 20px;
+}
+
+button.btn.btn-warning.mt-4 {
+  width: 100%;
+}

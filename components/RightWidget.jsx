@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Button } from 'react-bootstrap';
 
+
 const PurchaseItemButtons = () => {
   // Initialize the main price
   const mainPrice = 1575.00;
@@ -26,8 +27,6 @@ const PurchaseItemButtons = () => {
     } else {
       // Calculate the total price by adding the main price and selected plan price
       const totalPrice = mainPrice + selectedPlanPrice;
-      // Perform your desired action for purchasing
-      // For example, you can redirect to a payment page or show a confirmation message.
       console.log(`Total Price: $${totalPrice.toFixed(2)}`);
     }
   };
@@ -36,46 +35,45 @@ const PurchaseItemButtons = () => {
     <div className='rightSidebar m-5'>
       {/* Display the total price */}
       <h3 className='text-center'>Price: ${mainPrice.toFixed(2)}</h3>
-      <Button variant="warning mt-4 payBtn" onClick={handleBuyNowClick}>Buy Now</Button>{' '}
-      <div className="row">
+      <Button variant="warning mt-4 payBtn" onClick={handleBuyNowClick}>Buy Now</Button>
+      <div className="row proBtn">
         <div className="h6 m-3">Protection Plan</div>
-        <div className="col">
+        <div className="col-3 proBtn">
           {/* Use onClick to call the handleButtonClick function with the selected price */}
           <Button
             variant="light"
             id='2yearPro'
-            onClick={() => handleButtonClick(299.00)}
+            onClick={() => handleButtonClick(350.00)}
           >
-            2 year - $299.00
-          </Button>{''}
+            2 year - $350.00
+          </Button>
         </div>
-        <div className="col">
+        <div className="col-3 proBtn">
           <Button
             variant="light"
             id='3yearPro'
-            onClick={() => handleButtonClick(375.00)}
+            onClick={() => handleButtonClick(425.00)}
           >
-            3 year - $375.00
-          </Button>{''}
+            3 year - $425.00
+          </Button>
         </div>
-        <div className="col">
+        <div className="col-3 proBtn">
           <Button
             variant="light"
             id='4yearPro'
-            onClick={() => handleButtonClick(423.00)}
+            onClick={() => handleButtonClick(500.00)}
           >
-            4 year - $423.00
-          </Button>{''}
+            4 year - $500.00
+          </Button>
         </div>
-        <div className="col">
+        <div className="col-3 proBtn">
           <Button
             variant="light"
-            id='noProtection'
-            className='p-3'
+            id='4yearPro'
             onClick={() => handleButtonClick(0.00)}
           >
             No Protection
-          </Button>{''}
+          </Button>
         </div>
       </div>
     </div>

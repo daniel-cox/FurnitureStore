@@ -13,3 +13,4 @@ Currently, two official plugins are available:
 "# FurnitureStore" 
 "# FurnitureStore" 
 "# FurnitureStore" 
+# furnitureEcommerce

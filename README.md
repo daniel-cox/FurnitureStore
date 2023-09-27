@@ -16,3 +16,4 @@ Currently, two official plugins are available:
 # furnitureEcommerce
 # furnitureEcommerce
 # furnitureEcommerce
+# furnitureEcommerce

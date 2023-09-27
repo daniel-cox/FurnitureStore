@@ -80,6 +80,11 @@ const PurchaseItemButtons = () => {
           </Button>
         </div>
       </div>
+      <div className="row">
+        <div className="col">
+          <Button className='mt-4 bg-primary'>Financing Available -- <small><em> Pay over 6 months</em></small></Button>
+        </div>
+      </div>
     </div>
   );
 };

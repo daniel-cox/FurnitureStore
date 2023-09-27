@@ -2,7 +2,6 @@ import React from 'react'
 import Description from './Description'
 import RightWidget from './RightWidget'
 
-
 function MainContent() {
   return (
     <div className="container">
@@ -22,6 +21,7 @@ function MainContent() {
      </div>
   )
 }
+
 
 export default MainContent
 //comment

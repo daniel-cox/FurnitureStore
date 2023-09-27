@@ -9,6 +9,9 @@ const PurchaseItemButtons = () => {
   // Create a state variable to store the selected protection plan price
   const [selectedPlanPrice, setSelectedPlanPrice] = useState(0);
 
+  const [selectedProtectionPlanPrice, setSelectedProtectionPlanPrice] = useState(0);
+
+
   // Create a state variable to track if the protection plan is selected
   const [protectionPlanSelected, setProtectionPlanSelected] = useState(false);
 
@@ -79,5 +82,4 @@ const PurchaseItemButtons = () => {
     </div>
   );
 };
-
 export default PurchaseItemButtons;

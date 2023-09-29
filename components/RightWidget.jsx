@@ -66,7 +66,7 @@ const PurchaseItemButtons = () => {
             id='3yearPro'
             onClick={() => handleButtonClick(1050.00)}
           >
-            2 year - $1050.00
+            3 year - $1050.00
           </Button>
         </div>
         <div className="col-3 proBtn">
@@ -81,8 +81,33 @@ const PurchaseItemButtons = () => {
         </div>
       </div>
       <div className="row">
-        <div className="col">
-          <Button className='mt-4 bg-primary'>Financing Available -- <small><em> Pay over 6 months</em></small></Button>
+        <div className="col d-flex justify-content-center">
+          <Button className='mt-4 bg-primary'><small>Financing Available - Pay over 6 or 12 months<em></em></small></Button>
+        </div>
+      </div>
+      <div className="row mt-2">
+      <div className="col-12">
+          <span className='productInfo'>
+            <i class="fa-solid fa-circle-check productAvailability"></i>
+            <small>In Stock</small>
+          </span>
+        </div>
+        <div className="col-12">
+          <span className='productInfo'>
+            <i class="fa-solid fa-truck-fast productMoreInfo"></i>
+            <small>shipping from Nashville</small>
+          </span>
+        </div>
+        <div className="col-12">
+          <span className='productInfo'>
+            <i class="fa-solid fa-rotate-left productMoreInfo"></i>
+            <small>14-day return policy</small>
+          </span>
+        </div>
+        <div className="col m-3 text-center">
+          <p>Have Questions?</p>
+          <Button variant="secondary m-2"><i class="fa-solid fa-comments" ></i> Chat Now</Button>
+          <Button variant="warning"><i class="fa-solid fa-phone"></i> Call Us</Button>
         </div>
       </div>
     </div>

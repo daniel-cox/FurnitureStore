@@ -1,6 +1,7 @@
 import React from 'react'
 import Description from './Description'
 import RightWidget from './RightWidget'
+import ProductDetailBottom from './ProductDetailBottom'
 
 function MainContent() {
   return (

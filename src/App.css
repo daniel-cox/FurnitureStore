@@ -52,3 +52,11 @@ button.btn.btn-warning.mt-4 {
   padding:.5em;
   font-size: 14px;
 }
+
+.sectionBottom {
+  padding: 0;
+}
+
+.bottomHeader{
+  font-family: 'Prompt', sans-serif;
+}

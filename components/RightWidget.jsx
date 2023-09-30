@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Button } from 'react-bootstrap';
+import Terms from './Terms';
 
 const PurchaseItemButtons = () => {
   // Initialize the main price
@@ -82,8 +83,12 @@ const PurchaseItemButtons = () => {
       </div>
       <div className="row">
         <div className="col d-flex justify-content-center">
-          <Button className='mt-4 bg-primary'><small>Financing Available - Pay over 6 or 12 months<em></em></small></Button>
+          <Button className='mt-4 bg-primary'>
+            <i class="fa-solid fa-money-bill-trend-up"></i>
+            <small> Financing Available - Pay over 6 or 12 months</small>
+          </Button>
         </div>
+        <a href='#' className='text-center'><small>Terms and Contitions</small></a>
       </div>
       <div className="row mt-2">
       <div className="col-12">

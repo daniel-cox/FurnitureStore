@@ -5,7 +5,8 @@ import ProductDetailBottom from './ProductDetailBottom'
 
 function MainContent() {
   return (
-    <div className="container">
+    <>
+      <div className="container">
         <div className="row">
           <div className="col">
             <img src="components/images/laurence-corner-couch-fossil.webp" alt="Fossile Couch" width="750px" className='mt-5'/>
@@ -20,9 +21,12 @@ function MainContent() {
           </div>
         </div>
      </div>
+      <div className="container-fluid mt-5">
+        <ProductDetailBottom />
+      </div>
+      </>
   )
 }
 
 
 export default MainContent
-//comment

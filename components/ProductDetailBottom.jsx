@@ -11,7 +11,7 @@ function ProductDetailBottom() {
             <div className="col">
                 <img src="./components/images/laurence-corner-couch-fossil2.webp" alt="couch side view" className='img-fluid'/>
             </div>
-        </div>
+        </div> 
     </div>
   )
 }

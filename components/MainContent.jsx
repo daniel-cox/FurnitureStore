@@ -2,6 +2,7 @@ import React from 'react'
 import Description from './Description'
 import RightWidget from './RightWidget'
 import ProductDetailBottom from './ProductDetailBottom'
+import Reviews from './Reviews'
 
 function MainContent() {
   return (
@@ -21,9 +22,20 @@ function MainContent() {
           </div>
         </div>
      </div>
-      <div className="container-fluid mt-5">
+     <div className="row">
+      <div className="col-12">
+        <div className="container-fluid mt-5">
         <ProductDetailBottom />
+    </div>
       </div>
+      <div className="row">
+        <div className="col">
+          <div className="container-fluid">
+          <Reviews />
+      </div>
+        </div>
+          </div>
+        </div>
       </>
   )
 }

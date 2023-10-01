@@ -1,6 +1,7 @@
 import React from 'react'
 
 function Description() {
+  
   return (
     <div>
         <div className="container productDescription">
@@ -26,6 +27,7 @@ function Description() {
         Transform your living space today with the Fossil Corner Couch – the epitome of modern luxury and functionality.
     </ul>  
         </div>
+        <hr className="hr" />
     </div>
   )
 }

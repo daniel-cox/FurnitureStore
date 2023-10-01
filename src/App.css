@@ -4,6 +4,11 @@ html{
   max-width: auto;
 }
 
+h2,h3,h4,h5,h6,p,li{
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 1rem;
+}
+
 .rightSidebar {
   max-width: 650px;
   float: right;
@@ -59,4 +64,10 @@ button.btn.btn-warning.mt-4 {
 
 .bottomHeader{
   font-family: 'Prompt', sans-serif;
+}
+
+.fade-in-element {
+  opacity: 0;
+  transform: translateY(20px); /* Start with a slight translateY for a smooth effect */
+  transition: opacity 0.5s, transform 0.5s;
 }

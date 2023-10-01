@@ -71,3 +71,9 @@ button.btn.btn-warning.mt-4 {
   transform: translateY(20px); /* Start with a slight translateY for a smooth effect */
   transition: opacity 0.5s, transform 0.5s;
 }
+
+.ratings{display: flex;}
+.fa-star{
+  font-size: 18px;
+  color:#FFC107;
+}

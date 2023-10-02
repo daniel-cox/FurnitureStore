@@ -45,6 +45,7 @@ const PurchaseItemButtons = () => {
           <Button
             variant="light"
             id='1yearPro'
+            className='btnHover'
             onClick={() => handleButtonClick(350.00)}
           >
             1 year - $350.00
@@ -55,6 +56,7 @@ const PurchaseItemButtons = () => {
           <Button
             variant="light"
             id='2yearPro'
+            className='btnHover'
             onClick={() => handleButtonClick(650.00)}
           >
             2 year - $650.00
@@ -65,6 +67,7 @@ const PurchaseItemButtons = () => {
           <Button
             variant="light"
             id='3yearPro'
+            className='btnHover'
             onClick={() => handleButtonClick(1050.00)}
           >
             3 year - $1050.00
@@ -75,6 +78,7 @@ const PurchaseItemButtons = () => {
           <Button
             variant="light"
             id='noPro'
+            className='btnHover'
             onClick={() => handleButtonClick(0.00)}
           >
             No Protection

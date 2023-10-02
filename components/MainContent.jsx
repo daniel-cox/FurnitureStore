@@ -3,14 +3,19 @@ import Description from './Description'
 import RightWidget from './RightWidget'
 import ProductDetailBottom from './ProductDetailBottom'
 import Reviews from './Reviews'
+import config from './config'
 
 function MainContent() {
+  const itemName = config.itemName;
+  const itemImage = config.itemImage;
+
   return (
     <>
       <div className="container">
         <div className="row">
           <div className="col">
-            <img src="components/images/laurence-corner-couch-fossil.webp" alt="Fossile Couch" width="750px" className='mt-5'/>
+            <h1 className='text-center mt-5'>{itemName}</h1>
+            <img src={itemImage} alt="Fossile Couch" width="750px" className='mt-5'/>
           </div>
           <div className="col">
             <RightWidget />

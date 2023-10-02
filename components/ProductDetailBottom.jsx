@@ -1,6 +1,10 @@
 import React from 'react'
+import config from './config'
+
 
 function ProductDetailBottom() {
+  const itemImage = config.itemImageBtm
+
   return (
     <div className="container-fluid">
         <div className="row">
@@ -9,7 +13,7 @@ function ProductDetailBottom() {
                 <p className='mt-5 BottomHeader'>Experience the ultimate in comfort and sophistication with our exquisite leather couch. Crafted for enduring style and unparalleled softness, it's the perfect centerpiece for your living space. Elevate your home decor with timeless elegance</p>
             </div>
             <div className="col">
-                <img src="./components/images/laurence-corner-couch-fossil2.webp" alt="couch side view" className='img-fluid'/>
+                <img src={itemImage} alt="couch side view" className='img-fluid'/>
             </div>
         </div> 
     </div>

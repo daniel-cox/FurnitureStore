@@ -30,6 +30,10 @@ h2,h3,h4,h5,h6,p,li{
   justify-content: center;
 }
 
+.btnHover:hover {
+  background-color: #FEC240!important;
+}
+
 
 img{
   float: left;
@@ -44,6 +48,8 @@ img{
 button.btn.btn-warning.mt-4 {
   width: 100%;
 }
+
+
 
 .productMoreInfo{
   color: #FFC107;

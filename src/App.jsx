@@ -6,8 +6,8 @@ import './App.css'
 
 function App() {
   return (
+    //remember to install react router
     <div>
-      {/* <Navigation /> */}
       <MainContent />
     </div>
 )}

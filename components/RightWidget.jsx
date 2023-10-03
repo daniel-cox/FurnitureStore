@@ -94,7 +94,7 @@ const PurchaseItemButtons = () => {
         </div>
         <a href='#' className='text-center'><small>Terms and Contitions</small></a>
       </div>
-      <div className="row mt-2">
+      <div className="row mt-2  containBg">
       <div className="col-12">
           <span className='productInfo'>
             <i className="fa-solid fa-circle-check productAvailability"></i>

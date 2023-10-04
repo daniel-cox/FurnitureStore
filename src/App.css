@@ -88,3 +88,7 @@ button.btn.btn-warning.mt-4 {
   font-size: 18px;
   color:#FFC107;
 }
+
+.col.text-center.bg-light.text-dark.rounded {
+  margin: 1em;
+}

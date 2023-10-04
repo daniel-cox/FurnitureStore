@@ -88,11 +88,11 @@ const PurchaseItemButtons = () => {
       <div className="row">
         <div className="col d-flex justify-content-center">
           <Button className='mt-4 bg-primary'>
-            <i className="fa-solid fa-money-bill-trend-up"></i>
-            <small> Financing Available - Pay over 6 or 12 months</small>
+            <i className="fa-solid fa-money-bill-trend-up px-1"></i>
+            <small> Financing Available</small>
+            <a href='#' className='text-center text-white mx-2'><small>Terms and Contitions</small></a>
           </Button>
         </div>
-        <a href='#' className='text-center'><small>Terms and Contitions</small></a>
       </div>
       <div className="row mt-2  containBg">
       <div className="col-12">

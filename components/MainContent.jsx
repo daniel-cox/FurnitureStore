@@ -3,6 +3,7 @@ import Description from './Description'
 import RightWidget from './RightWidget'
 import ProductDetailBottom from './ProductDetailBottom'
 import Reviews from './Reviews'
+import Footer from './global/Footer'
 import config from './config'
 
 function MainContent() {
@@ -41,6 +42,7 @@ function MainContent() {
         </div>
           </div>
         </div>
+        <Footer />
       </>
   )
 }

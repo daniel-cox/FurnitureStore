@@ -92,3 +92,10 @@ button.btn.btn-warning.mt-4 {
 .col.text-center.bg-light.text-dark.rounded {
   margin: 1em;
 }
+
+/************************ Start Footer *************************/
+
+footer{
+background: rgb(13,110,253);
+background: linear-gradient(180deg, rgba(13,110,253,1) 0%, rgba(29,124,254,1) 46%, rgba(8,43,175,1) 100%);
+}

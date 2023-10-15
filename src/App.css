@@ -93,6 +93,10 @@ button.btn.btn-warning.mt-4 {
   margin: 1em;
 }
 
+.heroImg{
+  height: 20vh;
+}
+
 /************************ Start Footer *************************/
 
 footer{

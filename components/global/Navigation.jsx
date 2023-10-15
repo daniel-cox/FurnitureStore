@@ -4,6 +4,7 @@ import Form from 'react-bootstrap/Form';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
+import About from '../AboutUs';
 
 function NavScrollExample() {
   return (
@@ -25,8 +26,8 @@ function NavScrollExample() {
             className="me-auto my-2 my-lg-0"
             navbarScroll
           >
-            <Nav.Link href="#">Home</Nav.Link>
-            <Nav.Link href="#action2">About Us</Nav.Link>
+            <Nav.Link href="<Homepage />">Home</Nav.Link>
+            <Nav.Link href="<AboutUs />">About Us</Nav.Link>
             <NavDropdown title="Categories" id="navbarScrollingDropdown">
               <NavDropdown.Item href="#action3">Living Room</NavDropdown.Item>
               <NavDropdown.Item href="#action4">
@@ -37,7 +38,7 @@ function NavScrollExample() {
                 On Sale
               </NavDropdown.Item>
             </NavDropdown>
-            <Nav.Link href="#" disabled>
+            <Nav.Link href="#">
               Contact Us
             </Nav.Link>
           </Nav>

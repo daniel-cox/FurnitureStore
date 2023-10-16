@@ -5,7 +5,6 @@ import ProductDetailBottom from './ProductDetailBottom'
 import Reviews from './Reviews'
 import Footer from './global/Footer'
 import config from './config'
-import Navigation from './global/Navigation'
 
 function MainContent() {
   const itemName = config.itemName;
@@ -13,7 +12,6 @@ function MainContent() {
 
   return (
     <>
-    <Navigation />
       <div className="container">
         <div className="row">
           <div className="col">

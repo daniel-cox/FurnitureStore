@@ -5,8 +5,15 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import About from '../AboutUs';
+import { Link, useNavigate } from 'react-router-dom'
 
 function NavScrollExample() {
+
+  const navigate = useNavigate();
+  const handleClick = () =>{
+    navigate('/index.html')
+  }
+
   return (
     <Navbar expand="lg" className="bg-body-tertiary"> 
       <Container fluid>
@@ -26,7 +33,7 @@ function NavScrollExample() {
             className="me-auto my-2 my-lg-0"
             navbarScroll
           >
-            <Nav.Link href="<Homepage />">Home</Nav.Link>
+            <Nav.Link onClick={handleClick}>Home</Nav.Link>
             <Nav.Link href="<AboutUs />">About Us</Nav.Link>
             <NavDropdown title="Categories" id="navbarScrollingDropdown">
               <NavDropdown.Item href="#action3">Living Room</NavDropdown.Item>

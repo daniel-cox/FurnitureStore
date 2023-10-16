@@ -9,14 +9,12 @@ function App() {
   return (
     <Router>
       <div>
-        <Navigation />
+        <Navigation />  {/* renders site navigation */}
         <Routes>
-        <Route exact path='/StoneHouse-Leather-Couch' element={<MainContent/>}/>
+          <Route exact path='/index.html' element={<Homepage/>}/>
+          <Route exact path='/StoneHouse-Leather-Couch' element={<MainContent/>}/>
         </Routes>
       </div>
-        <>
-          <Homepage />
-        </>
     </Router>
   );
 }

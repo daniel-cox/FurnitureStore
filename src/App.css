@@ -63,11 +63,17 @@ button.btn.btn-warning.mt-4 {
   width: 100%;
 }
 
-.heroText{
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 4rem;
+.productMoreInfo{
+  color: #FFC107;
+  margin-top: 1em;
+  padding:.5em;
+  font-size: 14px;
+}
+.productAvailability{
+  color: #43c02a;
+  margin-top: 1em;
+  padding:.5em;
+  font-size: 14px;
 }
 
 .sectionBottom {

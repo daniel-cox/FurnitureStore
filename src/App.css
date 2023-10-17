@@ -14,8 +14,8 @@ h2,h3,h4,h5,h6,p,ul,li{
 .fa-check{color: #43c02a;}
 
 a {
-  color: #ffffff;
-  text-decoration: none;
+  color: #1a1a1a!important;
+  text-decoration: none!important;
 }
 
 .rightSidebar {
@@ -63,19 +63,11 @@ button.btn.btn-warning.mt-4 {
   width: 100%;
 }
 
-
-
-.productMoreInfo{
-  color: #FFC107;
-  margin-top: 1em;
-  padding:.5em;
-  font-size: 14px;
-}
-.productAvailability{
-  color: #43c02a;
-  margin-top: 1em;
-  padding:.5em;
-  font-size: 14px;
+.heroText{
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 4rem;
 }
 
 .sectionBottom {

@@ -11,7 +11,7 @@ function App() {
       <div>
         <Navigation />  {/* renders site navigation */}
         <Routes>
-          <Route exact path='/index.html' element={<Homepage/>}/>
+          <Route exact path='/' element={<Homepage/>}/>
           <Route exact path='/StoneHouse-Leather-Couch' element={<MainContent/>}/>
         </Routes>
       </div>

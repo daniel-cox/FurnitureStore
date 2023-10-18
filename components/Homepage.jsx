@@ -12,7 +12,7 @@ function Homepage() {
   }
   const style = {fontFamily:
      "'Aboreto', 'Bebas Neue', 'sans-serif'",
-     background: '-webkit-linear-gradient(45deg, #f06, #2d1593)',
+     background: '-webkit-linear-gradient(40deg, #cf4529, #cf29be, #2966cf)',
      WebkitBackgroundClip: 'text',
      WebkitTextFillColor: 'transparent',
     }
@@ -49,6 +49,9 @@ function Homepage() {
                   </Button>
                 </div>
              </div>
+            <section>
+              <img src="./public/designerLooks.jpg" alt="" className='midSectionImg img-responsive w-100'/>
+            </section>
         </div>
         <Footer />
     </div>

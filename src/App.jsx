@@ -6,11 +6,15 @@ import './App.css';
 import MainContent from '../components/MainContent'
 
 function App() {
+  const scrollBehavior = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' }); // Scroll to the top
+  };
+
   return (
     <Router>
       <div>
         <Navigation />  {/* renders site navigation */}
-        <Routes>
+        <Routes scrollRestoration="auto">
           <Route exact path='/' element={<Homepage/>}/>
           <Route exact path='/StoneHouse-Leather-Couch' element={<MainContent/>}/>
         </Routes>

@@ -11,7 +11,7 @@ function NavScrollExample() {
 
   const navigate = useNavigate();
   const handleClick = () =>{
-    navigate('/index.html')
+    navigate('/')
   }
 
   return (

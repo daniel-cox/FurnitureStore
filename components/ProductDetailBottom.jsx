@@ -1,5 +1,5 @@
 import React from 'react'
-import config from './config'
+import {product1, product2} from './Config';
 
 
 function ProductDetailBottom() {

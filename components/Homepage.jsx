@@ -1,7 +1,7 @@
-import React from 'react'
-import config from './config.jsx';
-import { Button } from 'react-bootstrap'
-import { Link, useNavigate } from 'react-router-dom'
+import React from 'react';
+import {product1, product2} from './Config';
+import { Button,Badge } from 'react-bootstrap';
+import { Link, useNavigate } from 'react-router-dom';
 import Footer from './global/Footer';
 
 
@@ -21,7 +21,7 @@ function Homepage() {
 
   return (
     <div>
-          <img src="{./public/hero.jpg}" alt="hero image" className='z-1 heroIm w-100' />
+          <img src="./public/hero.jpg" alt="hero image" className='z-1 heroIm w-100' />
         <div className="productGrid">
             <div className='overlay-text'>
                  <h2 className='z-2 text-center position-absolute heroText' style={style}>A Touch of Modern Luxury for Your Home</h2>
@@ -29,26 +29,22 @@ function Homepage() {
             <div className="row">
             <h2 className='text-center mt-4'>Newest Items In Our Collection</h2>
                 <div className="col p-5 mt-3 text-center">
-                  <img src="./public/laurence-corner-couch-fossil.webp" alt="" height="250px" width="auto"/>
-                  <h3 className='p-3'>{config.product1.itemDescription}</h3>
+                  <img src={product1.itemImageBtm} alt="" height="250px" width="auto"/>
+                  <h3 className='p-3'>{product1.itemName}</h3>
                   <Button onClick={handleButtonClick} variant='warning'>
                     <Link to="StoneHouse-Leather-Couch">Order Here</Link>
                   </Button>
                 </div>
                 <div className="col p-5 mt-3 text-center">
-                    <img src="./public/laurence-corner-couch-fossil.webp" alt="" height="250px" width="auto"/>
-                  <h3 className='p-3'>{config.product2.itemImage}</h3>
-                  <Button onClick={handleButtonClick} variant='warning'>
-                    <Link to="StoneHouse-Leather-Couch">Order Here</Link>
-                  </Button>
+                    <img src={product2.itemImageBtm} alt="" height="250px" width="481px"/>
+                  <h3 className='p-3'>{product2.itemName}</h3>
+                  <Badge bg="danger" style={{ padding: '0.7rem' }}>Sold Out</Badge>
                 </div>
 
                 <div className="col p-5 mt-3 text-center">
                   <img src="./public/laurence-corner-couch-fossil.webp" alt="" height="250px" width="auto"/>
                   <h3 className='p-3'>Stonehouse Leather Couch</h3>
-                  <Button onClick={handleButtonClick} variant='warning'>
-                    <Link to="StoneHouse-Leather-Couch">Order Here</Link>
-                  </Button>
+                  <Badge bg="danger" style={{ padding: '0.7rem' }}>Sold Out</Badge>
                 </div>
              </div>
             <section>

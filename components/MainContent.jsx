@@ -4,7 +4,7 @@ import RightWidget from './RightWidget'
 import ProductDetailBottom from './ProductDetailBottom'
 import Reviews from './Reviews'
 import Footer from './global/Footer'
-import config from './config'
+import product1 from './Config';
 
 function MainContent() {
   const itemName = config.itemName;
@@ -15,8 +15,8 @@ function MainContent() {
       <div className="container">
         <div className="row">
           <div className="col text-center">
-            <h1 className='text-center mt-5'>{itemName}</h1>
-            <img src={itemImage} alt="Fossile Couch" width="750px" className='mt-5'/>
+            <h1 className='text-center mt-5'>{product1.itemName}</h1>
+            <img src={product1.itemImage} alt="Stonehouse Leather Couch" width="750px" className='mt-5'/>
           </div>
           <div className="col">
             <RightWidget />

@@ -10,8 +10,8 @@ import { Link, useNavigate } from 'react-router-dom'
 function NavScrollExample() {
 
   const navigate = useNavigate();
-  const handleClick = () =>{
-    navigate('/')
+  const handleClick = (path) =>{
+    navigate(path)
   }
 
   return (
@@ -33,21 +33,15 @@ function NavScrollExample() {
             className="me-auto my-2 my-lg-0"
             navbarScroll
           >
-            <Nav.Link onClick={handleClick}>Home</Nav.Link>
-            <Nav.Link href="<AboutUs />">About Us</Nav.Link>
+            <Nav.Link onClick={() => handleClick('/')}>Home</Nav.Link>
+            <Nav.Link onClick={() => handleClick('About-Us')}>About Us</Nav.Link>
             <NavDropdown title="Categories" id="navbarScrollingDropdown">
               <NavDropdown.Item href="#action3">Living Room</NavDropdown.Item>
-              <NavDropdown.Item href="#action4">
-                Bed Room
-              </NavDropdown.Item>
+              <NavDropdown.Item href="#action4">Bed Room</NavDropdown.Item>
               <NavDropdown.Divider />
-              <NavDropdown.Item href="#action5">
-                On Sale
-              </NavDropdown.Item>
+              <NavDropdown.Item href="#action5">On Sale</NavDropdown.Item>
             </NavDropdown>
-            <Nav.Link href="#">
-              Contact Us
-            </Nav.Link>
+            <Nav.Link href="#">Contact Us</Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>

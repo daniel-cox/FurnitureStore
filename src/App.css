@@ -1,24 +1,47 @@
 @import 'bootstrap/dist/css/bootstrap.min.css';
 
+/************************ Start Global *************************/
+
 html{
   background-color: #F8F9FA;
   height: 800px;
   max-width: auto;
 }
 
-
-h2,h3,h4,h5,h6,p,ul,li{
-  font-family: 'Ubuntu', sans-serif;
-  font-size: 1rem;
-  text-decoration: none;
-  list-style: none;
-}
-.fa-check{color: #43c02a;}
-
 a {
   color: #1a1a1a!important;
   text-decoration: none!important;
 }
+
+h2,h3,h4,h5,h6,p,ul,li{
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 1vw;
+  text-decoration: none;
+  list-style: none;
+}
+
+.container-fluid {padding: 0!important;}
+.container {
+  display: flex;
+  flex-wrap: wrap; /* Allow components to wrap to the next row when necessary */
+  justify-content: space-between; /* Distribute components evenly */
+  padding:0;
+}
+
+.col.text-center.bg-light.text-dark.rounded {
+  margin: 1em;
+}
+
+img{
+  float: left;
+  background-size:cover;
+  background-position: center;
+}
+
+.fa-check{color: #43c02a;}
+
+/************************ End Global *************************/
+
 
 .rightSidebar {
   max-width: 650px;
@@ -34,18 +57,15 @@ a {
   border-radius: 10px;
 }
 
-.container {
-  display: flex;
-  flex-wrap: wrap; /* Allow components to wrap to the next row when necessary */
-  justify-content: space-between; /* Distribute components evenly */
-  padding:0;
-}
-
 .heroText {
   top: 400px;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-size: 7em;
+  font-size: 6vw;
+  font-family: 'Aboreto', 'Bebas Neue', sans-serif;
+  background: -webkit-linear-gradient(45deg, #cf4529, #cf29be, #2966cf);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .proBtn button {
@@ -55,13 +75,6 @@ a {
 
 .btnHover:hover {
   background-color: #FEC240!important;
-}
-
-
-img{
-  float: left;
-  background-size:cover;
-  background-position: center;
 }
 
 .paragraph-spacing {
@@ -105,19 +118,49 @@ button.btn.btn-warning.mt-4 {
   color:#FFC107;
 }
 
-.col.text-center.bg-light.text-dark.rounded {
-  margin: 1em;
-}
-
 .heroImg{
   height: 20vh;
 }
 
 .information{ align-items: normal;}
 
+/************************ Start About Us *************************/
+
+.aboutUsDescription strong {
+  padding-top: 2em!important;
+  font-size: 2em;
+  display: flex;
+}
+/************************ End About Us *************************/
+
+
+
 /************************ Start Footer *************************/
 
 footer {
   background: rgb(61, 61, 61);
   background: linear-gradient(180deg, rgb(58 58 58) 0%, rgb(37 37 37) 46%, rgb(29 29 29) 100%);
+}
+
+/************************ Start Media Queries *************************/
+
+
+/* For larger screens */
+@media (min-width: 768px) {
+  .col {
+    width: 33.33%; /* 3 columns in a row */
+  }
+}
+
+/* For smaller screens like mobile */
+@media (max-width: 767px) {
+  .col {
+    width: 100%; /* Full-width for mobile */
+  }
+
+  /* Adjust image sizes for mobile */
+  img {
+    max-width: 100%;
+    height: auto;
+  }
 }

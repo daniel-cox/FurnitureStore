@@ -4,7 +4,7 @@ import RightWidget from './RightWidget';
 import ProductDetailBottom from './ProductDetailBottom';
 import Reviews from './Reviews';
 import Footer from './global/Footer';
-import { product1 } from './config';
+import productData from './Config'; 
 
 function MainContent() {
 
@@ -14,8 +14,8 @@ function MainContent() {
       <div className="container">
         <div className="row">
           <div className="col text-center">
-            <h1 className='text-center mt-5'>{props.product1.itemName}</h1>
-            <img src={props.product1.itemImage} alt="Stonehouse Leather Couch" width="750px" className='mt-5'/>
+            <h1 className='text-center mt-5'>{productData.product1.itemName}</h1>
+            <img src={productData.product1.itemImage} alt="Stonehouse Leather Couch" width="750px" className='mt-5'/>
           </div>
           <div className="col">
             <RightWidget />

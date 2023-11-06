@@ -4,8 +4,7 @@ import RightWidget from './RightWidget';
 import ProductDetailBottom from './ProductDetailBottom';
 import Reviews from './Reviews';
 import Footer from './global/Footer';
-import productData from './Config'; 
-
+import productData from './config';
 function MainContent() {
 
 
